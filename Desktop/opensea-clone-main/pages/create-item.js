@@ -1,8 +1,9 @@
-import {useState } from 'react'
-import {ethers } from 'ethers'
-import { create as ipfsHttpClient } from 'ipfs-http-client'
-import { useRouter } from 'next/router'
-import Web3Modal from 'web3modal'
+import {useState } from 'react';
+import {ethers } from 'ethers';
+import { create as ipfsHttpClient } from 'ipfs-http-client';
+import { useRouter } from 'next/router';
+import Web3Modal from 'web3modal';
+import Image from 'next/Image';
 
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0');
 
@@ -11,8 +12,7 @@ import {
 } from '../config';
 import NFT from '../utils/NFT.json';
 import Market from '../utils/NFTMarket.json';
-import { EtherscanProvider } from '@ethersproject/providers'
-import Image from 'next/Image'
+import { EtherscanProvider } from '@ethersproject/providers';
 
 
 export default function CreateItem() {
